@@ -1,0 +1,220 @@
+*{
+      font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+      margin: 0;
+      padding: 0;
+}
+html {
+      scroll-behavior: smooth; 
+    }
+    
+.Navbar {
+    padding: 15px 85.333px;
+    background: linear-gradient(90deg, #000428, #004e92);
+    color: white;
+    box-shadow: 0px 5.333px 80px 0 rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.Navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Navbar ul li {
+    margin: 0 15px;
+    display: flex; 
+    align-items: center; 
+}
+
+.Navbar ul li a {
+    text-decoration: none;
+    color: white;
+}
+.Navbar ul li a:hover {
+      background-color: black;
+  }
+  .Navbar ul li a.active {
+      background-color: black;
+      font-weight: bold;
+  }
+
+.Navbar .cv-button {
+    background-color: chocolate;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Navbar .cv-button:hover {
+    background-color: darkorange;
+    transition: background-color 0.3s ease;
+}
+
+.Navbar .cv-button:active {
+    background-color: orangered;
+}
+
+
+
+.containor {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row-reverse;
+      height: 100vh;
+      background-color: #f1f1f1;
+      margin-top: 100px;
+      padding: 120px;
+      gap: 20px;
+}
+
+
+#title {
+      margin-top: 100px;
+      font-size: 50px;
+      font-weight: bold;
+      color: #333;
+      text-align: center;
+    }
+    
+    .text {
+      margin-top: 10px; 
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+    }
+    
+    .Cards {
+      display: flex;
+      flex-direction: column; 
+      align-items: center; 
+      background-color: white;
+      padding: 20px;
+    }
+    
+    .card {
+      display: flex;
+      justify-content: space-evenly; 
+      flex-wrap: wrap; 
+      margin: 20px 0; 
+    }
+    
+    .skill {
+      display: flex;
+      flex-direction: column; 
+      align-items: center; 
+      margin: 10px; 
+    }
+    
+    .Cards img {
+      border: 2px solid black;
+      width: 100px; 
+      height: 100px; 
+      object-fit: cover;
+      transition: transform 0.3s ease; 
+    }
+    
+    .Cards img:hover {
+      transform: scale(1.1); 
+    }
+.About{
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      font-weight: bold;
+      color: black;
+      margin-top: 100px;
+      margin-left: 400px;
+      width: 600px;
+      height: 600px;
+      font-family: 'Times New Roman', Times, serif;
+      
+
+
+}
+
+
+.project-section {
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .project-cards {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    
+    .project-card {
+      background: #f4f4f4;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+      padding: 20px;
+      width: 300px;
+      transition: transform 0.2s;
+    }
+    
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+    
+    .project-card img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+  
+
+.footer {
+      background-color: #333; 
+      color: white; 
+      text-align: center; 
+      padding: 20px; 
+      position: relative; 
+      bottom: 0; 
+      width: 100%; 
+    }
+    
+    .footer-content {
+      margin: 0 auto; 
+    }
+    
+    .footer-links {
+      margin-top: 10px; 
+    }
+    
+    .footer-links a {
+      color: #fff; 
+      text-decoration: none; 
+      margin: 0 10px; 
+    }
+    
+    .footer-links a:hover {
+      text-decoration: underline; 
+    }
+    
+    .footer span {
+      margin: 0 5px; 
+    }
