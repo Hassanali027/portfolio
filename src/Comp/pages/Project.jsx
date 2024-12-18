@@ -1,13 +1,10 @@
-// src/ProjectSection.js
-
 import React from 'react';
-
 
 const ProjectSection = () => {
   const projects = [
     {
       title: 'Spotify Clone',
-      description: 'A clone of the popular music streaming service, featuring song search and playback.',
+      description: 'A clone of the popular music streaming service',
       link: 'https://hassanali905.netlify.app/', 
       image: '/img/spotify pic.jpg' 
     },
@@ -34,7 +31,14 @@ const ProjectSection = () => {
             <img src={project.image} alt={project.title} />
             <h3>{project.title}</h3>
             <p>{project.description}</p>
-            <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
+            <a 
+              href={project.link} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="view-project-btn" /* Class added here */
+            >
+              View Project
+            </a>
           </div>
         ))}
       </div>
