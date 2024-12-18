@@ -142,6 +142,7 @@ html {
 }
 
 /* About Section */
+/* About Section */
 .About {
   display: flex;
   flex-direction: column;
@@ -151,10 +152,28 @@ html {
   font-weight: bold;
   color: black;
   margin-top: 100px;
-  margin-left: 400px;
-  width: 600px;
-  height: 600px;
+  width: 80%;  /* Change from fixed width to percentage */
+  max-width: 600px;  /* Set a max-width for larger screens */
+  height: auto;  /* Remove fixed height */
   font-family: 'Times New Roman', Times, serif;
+}
+
+/* Mobile Adjustments */
+@media only screen and (max-width: 768px) {
+  .About {
+    margin-left: 0;
+    width: 90%;  /* Ensure it's responsive on medium screens */
+    font-size: 18px;  /* Adjust font size */
+    text-align: center;  /* Center the text */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .About {
+    font-size: 16px;  /* Adjust font size for very small screens */
+    width: 100%;  /* Use full width on small devices */
+    padding: 20px;  /* Add padding for better spacing */
+  }
 }
 
 /* Project Section */
