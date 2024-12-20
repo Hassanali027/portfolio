@@ -5,7 +5,7 @@ function Herosection() {
     <div className='containor'  >
       <img src="/img/bitemojy.jpg" alt="hero section" />
      <div className='text'>
-      <h1>Hey, I'm SYED HASSAN ALI</h1>
+      <h1>Hey, I'm SYED HASSAN </h1>
       <p>FRONT-END DEVEOPER
       </p>
      </div>

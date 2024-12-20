@@ -9,19 +9,19 @@ function Skills() {
       <div className='card'>
         <div className='skill'>
           <img src="/img/html.png" alt="HTML" />
-          <p className='text'>HTML</p>
+          <p className='Skill_text'>HTML</p>
         </div>
         <div className='skill'>
           <img src="/img/Css.png" alt="CSS" />
-          <p className='text'>CSS</p>
+          <p className='Skill_text'>CSS</p>
         </div>
         <div className='skill'>
           <img src="/img/javascript-logo.png" alt="JavaScript" />
-          <p className='text'>JavaScript</p>
+          <p className='Skill_text'>JavaScript</p>
         </div>
         <div className='skill'>
           <img src="/img/react.png" alt="React" />
-          <p className='text'>React</p>
+          <p className='Skill_text'>React</p>
         </div>
       </div>
     </div>
