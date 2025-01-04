@@ -4,22 +4,22 @@ const ProjectSection = () => {
   const projects = [
     {
       title: 'Spotify Clone',
-      description: 'A clone of the popular music streaming service',
-      link: 'https://hassanali905.netlify.app/', 
-      image: '/img/spotify pic.jpg' 
+      description: 'A clone of the popular music streaming service.',
+      link: 'https://hassanali905.netlify.app/',
+      image: '/img/spotify pic.jpg',
     },
     {
       title: 'Expense Tracker',
       description: 'An application to track your expenses and manage your budget effectively.',
-      link: 'https://expensetrackercalculator.netlify.app/', 
-      image: '/img/expenseT.jpg' 
+      link: 'https://expensetrackercalculator.netlify.app/',
+      image: '/img/expenseT.jpg',
     },
     {
       title: 'Weather App',
       description: 'A simple weather application that provides current weather information.',
-      link: 'https://wetherpp.netlify.app/', 
-      image: '/img/rain.png'  
-    }
+      link: 'https://wetherpp.netlify.app/',
+      image: '/img/rain.png',
+    },
   ];
 
   return (
@@ -31,11 +31,11 @@ const ProjectSection = () => {
             <img src={project.image} alt={project.title} />
             <h3>{project.title}</h3>
             <p>{project.description}</p>
-            <a 
-              href={project.link} 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="view-project-btn" /* Class added here */
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="view-project-btn"
             >
               View Project
             </a>

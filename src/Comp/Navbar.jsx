@@ -8,11 +8,11 @@ function Navbar() {
   };
 
   return (
-    <div className="Navbar">
-      <div className="Navbar-left">
+    <div className="navbar">
+      <div className="navbar-left">
         <h1>Hassan</h1>
       </div>
-      <div className="Navbar-right">
+      <div className="navbar-right">
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/skills">Skills</Link></li>
