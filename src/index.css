@@ -12,12 +12,11 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Navbar */
 .Navbar {
-  padding: 15px 85.333px;
+  padding: 15px 20px;
   background: linear-gradient(90deg, #000428, #004e92);
   color: white;
-  box-shadow: 0px 5.333px 80px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 80px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
   left: 0;
@@ -25,36 +24,52 @@ html {
   width: 100%;
   box-sizing: border-box;
   z-index: 1000;
-}
-
-.Navbar ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.Navbar-left h1 {
+  font-size: 24px;
+  margin: 0;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.Navbar-left h1:hover {
+  color: orange;
+}
+
+.Navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Space between navigation items */
+}
+
+.Navbar-right ul {
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
   font-size: 20px;
+  gap: 20px; /* Space between links */
+
 }
 
-.Navbar ul li {
-  margin: 0 15px;
-  display: flex;
-  align-items: center;
+.Navbar-right ul li {
+  margin: 0;
+  
 }
 
-.Navbar ul li a {
+.Navbar-right ul li a {
   text-decoration: none;
   color: white;
+  transition: color 0.3s ease;
+  padding: 20px;
 }
 
-.Navbar ul li a:hover {
-  background-color: black;
-}
-
-.Navbar ul li a.active {
-  background-color: black;
-  font-weight: bold;
+.Navbar-right ul li a:hover {
+  color: orange;
 }
 
 .Navbar .cv-button {
@@ -65,15 +80,46 @@ html {
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .Navbar .cv-button:hover {
   background-color: darkorange;
-  transition: background-color 0.3s ease;
+  color: black;
 }
 
 .Navbar .cv-button:active {
   background-color: orangered;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .Navbar {
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  .Navbar-left h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .Navbar-right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .Navbar-right ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .Navbar .cv-button {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 /* Main Container */
