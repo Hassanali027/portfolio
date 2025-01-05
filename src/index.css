@@ -17,7 +17,7 @@ html {
   background: linear-gradient(90deg, #005c97, #363795); /* Softer gradient */
   color: white;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-  position: fixed;
+  
   top: 0;
   left: 0;
   right: 0;
